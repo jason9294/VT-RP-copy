@@ -1,0 +1,483 @@
+<!DOCTYPE html><html lang=en><head><title>Creation Lab - 角色能力-外觀-戰鬥技巧-介紹</title><meta charset=utf-8><meta name=viewport content="width=device-width"><style>@font-face{src:url(Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/whitney-300-1FE35.woff);font-family:Whitney;font-weight:300}@font-face{src:url(Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/whitney-400-83E7B.woff);font-family:Whitney;font-weight:400}@font-face{src:url(Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/whitney-500-47E37.woff);font-family:Whitney;font-weight:500}@font-face{src:url(Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/whitney-600-9EC09.woff);font-family:Whitney;font-weight:600}@font-face{src:url(Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/whitney-700-A7A71.woff);font-family:Whitney;font-weight:700}html,body{margin:0;padding:0;background-color:#36393e;color:#dcddde;font-family:Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:17px;font-weight:400}a{color:#00aff4;text-decoration:none}a:hover{text-decoration:underline}img{object-fit:contain;image-rendering:high-quality;image-rendering:-webkit-optimize-contrast}.preamble{display:grid;grid-template-columns:auto 1fr;max-width:100%;padding:1rem}.preamble__guild-icon-container{grid-column:1}.preamble__guild-icon{max-width:88px;max-height:88px}.preamble__entries-container{grid-column:2;margin-left:1rem}.preamble__entry{margin-bottom:0.15rem;color:#ffffff;font-size:1.4rem}.preamble__entry--small{font-size:1rem}.chatlog{padding:1rem 0;width:100%;border-top:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1)}.chatlog__message-group{margin-bottom:1rem}.chatlog__message-container{background-color:transparent;transition:background-color 1s ease}.chatlog__message-container--highlighted{background-color:rgba(114,137,218,0.2)}.chatlog__message-container--pinned{background-color:rgba(249,168,37,0.05)}.chatlog__message{display:grid;grid-template-columns:auto 1fr;padding:0.15rem 0;direction:ltr;unicode-bidi:bidi-override}.chatlog__message:hover{background-color:#32353b}.chatlog__message:hover .chatlog__short-timestamp{display:block}.chatlog__message-aside{grid-column:1;width:72px;padding:0.15rem 0.15rem 0 0.15rem;text-align:center}.chatlog__reference-symbol{height:10px;margin:6px 4px 4px 36px;border-left:2px solid #4f545c;border-top:2px solid #4f545c;border-radius:8px 0 0 0}.chatlog__avatar{width:40px;height:40px;border-radius:50%}.chatlog__short-timestamp{display:none;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__message-primary{grid-column:2;min-width:0}.chatlog__reference{display:flex;margin-bottom:0.15rem;align-items:center;color:#b5b6b8;font-size:0.875rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.chatlog__reference-avatar{width:16px;height:16px;margin-right:0.25rem;border-radius:50%}.chatlog__reference-author{margin-right:0.3rem;font-weight:600}.chatlog__reference-content{overflow:hidden;text-overflow:ellipsis}.chatlog__reference-link{cursor:pointer}.chatlog__reference-link *{display:inline;pointer-events:none}.chatlog__reference-link .chatlog__markdown-quote{display:inline}.chatlog__reference-link .chatlog__markdown-pre{display:inline}.chatlog__reference-link:hover{color:#ffffff}.chatlog__reference-link:hover *:not(.chatlog__markdown-spoiler){color:inherit}.chatlog__reference-edited-timestamp{margin-left:0.25rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__header{margin-bottom:0.1rem}.chatlog__author{font-weight:500;color:#ffffff}.chatlog__bot-label{position:relative;top:-0.1rem;margin-left:0.3rem;padding:0.05rem 0.3rem;border-radius:3px;background-color:#5865F2;color:#ffffff;font-size:0.625rem;font-weight:500;line-height:1.3}.chatlog__timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__timestamp a{color:#a3a6aa}.chatlog__content{padding-right:1rem;font-size:0.95rem;word-wrap:break-word}.chatlog__edited-timestamp{margin-left:0.15rem;color:#a3a6aa;font-size:0.75rem;font-weight:500}.chatlog__attachment{position:relative;width:fit-content;margin-top:0.3rem;border-radius:3px;overflow:hidden}.chatlog__attachment--hidden{cursor:pointer;box-shadow:0 0 1px 1px rgba(0,0,0,0.1)}.chatlog__attachment--hidden *{pointer-events:none}.chatlog__attachment-spoiler-caption{display:none;position:absolute;left:50%;top:50%;z-index:999;padding:0.4rem 0.8rem;border-radius:20px;transform:translate(-50%,-50%);background-color:rgba(0,0,0,0.9);color:#dcddde;font-size:0.9rem;font-weight:600;letter-spacing:0.05rem}.chatlog__attachment--hidden .chatlog__attachment-spoiler-caption{display:block}.chatlog__attachment--hidden:hover .chatlog__attachment-spoiler-caption{color:#fff}.chatlog__attachment-media{max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__attachment--hidden .chatlog__attachment-media{filter:blur(44px)}.chatlog__attachment-generic{max-width:520px;width:100%;height:40px;padding:10px;border:1px solid #292b2f;border-radius:3px;background-color:#2f3136;overflow:hidden}.chatlog__attachment--hidden .chatlog__attachment-generic{filter:blur(44px)}.chatlog__attachment-generic-icon{float:left;width:30px;height:100%;margin-right:10px}.chatlog__attachment-generic-size{color:#72767d;font-size:12px}.chatlog__attachment-generic-name{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.chatlog__embed{display:flex;margin-top:0.3rem;max-width:520px}.chatlog__embed-color-pill{flex-shrink:0;width:0.25rem;border-top-left-radius:3px;border-bottom-left-radius:3px}.chatlog__embed-color-pill--default{background-color:#202225}.chatlog__embed-content-container{display:flex;flex-direction:column;padding:0.5rem 0.6rem;border:1px solid rgba(46,48,54,0.6);border-top-right-radius:3px;border-bottom-right-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-content{display:flex;width:100%}.chatlog__embed-text{flex:1}.chatlog__embed-author-container{display:flex;margin-bottom:0.5rem;align-items:center}.chatlog__embed-author-icon{width:20px;height:20px;margin-right:0.5rem;border-radius:50%}.chatlog__embed-author{color:#ffffff;font-size:0.875rem;font-weight:600;direction:ltr;unicode-bidi:bidi-override}.chatlog__embed-author-link{color:#ffffff}.chatlog__embed-title{margin-bottom:0.5rem;color:#ffffff;font-size:0.875rem;font-weight:600}.chatlog__embed-description{color:#dcddde;font-weight:500;font-size:0.85rem}.chatlog__embed-fields{display:flex;flex-wrap:wrap;gap:0 0.5rem}.chatlog__embed-field{flex:0;min-width:100%;max-width:506px;padding-top:0.6rem;font-size:0.875rem}.chatlog__embed-field--inline{flex:1;flex-basis:auto;min-width:50px}.chatlog__embed-field-name{margin-bottom:0.2rem;color:#ffffff;font-weight:600}.chatlog__embed-field-value{color:#dcddde;font-weight:500}.chatlog__embed-thumbnail{flex:0;max-width:80px;max-height:80px;margin-left:1.2rem;border-radius:3px}.chatlog__embed-images{display:grid;margin-top:0.6rem;grid-template-columns:repeat(2,1fr);gap:0.25rem}.chatlog__embed-images--single{display:block}.chatlog__embed-image{object-fit:cover;object-position:center;max-width:500px;max-height:400px;width:100%;height:100%;border-radius:3px}.chatlog__embed-footer{margin-top:0.6rem;color:#dcddde}.chatlog__embed-footer-icon{width:20px;height:20px;margin-right:0.2rem;border-radius:50%;vertical-align:middle}.chatlog__embed-footer-text{vertical-align:middle;font-size:0.75rem;font-weight:500}.chatlog__embed-plainimage{max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-spotify{border:0}.chatlog__embed-youtube-container{margin-top:0.6rem}.chatlog__embed-youtube{border:0;border-radius:3px}.chatlog__sticker{width:180px;height:180px}.chatlog__sticker--media{max-width:100%;max-height:100%}.chatlog__reactions{display:flex}.chatlog__reaction{display:flex;margin:0.35rem 0.1rem 0.1rem 0;padding:0.125rem 0.375rem;border:1px solid transparent;border-radius:8px;background-color:#2f3136;align-items:center}.chatlog__reaction:hover{border:1px solid hsla(0,0%,100%,.2);background-color:transparent}.chatlog__reaction-count{min-width:9px;margin-left:0.35rem;color:#b9bbbe;font-size:0.875rem}.chatlog__reaction:hover .chatlog__reaction-count{color:#dcddde}.chatlog__markdown{max-width:100%;line-height:1.3;overflow-wrap:break-word}.chatlog__markdown-preserve{white-space:pre-wrap}.chatlog__markdown-spoiler{background-color:rgba(255,255,255,0.1);border-radius:3px}.chatlog__markdown-spoiler--hidden{cursor:pointer;background-color:#202225;color:rgba(0,0,0,0)}.chatlog__markdown-spoiler--hidden:hover{background-color:rgba(32,34,37,0.8)}.chatlog__markdown-spoiler--hidden::selection{color:rgba(0,0,0,0)}.chatlog__markdown-quote{display:flex;margin:0.05rem 0}.chatlog__markdown-quote-border{margin-right:0.5rem;border:2px solid #4f545c;border-radius:3px}.chatlog__markdown-pre{background-color:#2f3136;font-family:"Consolas","Courier New",Courier,monospace;font-size:0.85rem}.chatlog__markdown-pre--multiline{display:block;margin-top:0.25rem;padding:0.5rem;border:2px solid #282b30;border-radius:5px;color:#b9bbbe}.chatlog__markdown-pre--multiline.hljs{background-color:#2f3136;color:#b9bbbe}.chatlog__markdown-pre--inline{display:inline-block;padding:2px;border-radius:3px}.chatlog__markdown-mention{border-radius:3px;padding:0 2px;background-color:rgba(88,101,242,.3);color:#dee0fc;font-weight:500}.chatlog__markdown-mention:hover{background-color:#5865f2;color:#ffffff}.chatlog__markdown-timestamp{border-radius:3px;padding:0 2px;color:#a3a6aa}.chatlog__emoji{width:1.325rem;height:1.325rem;margin:0 0.06rem;vertical-align:-0.4rem}.chatlog__emoji--small{width:1rem;height:1rem}.chatlog__emoji--large{width:2.8rem;height:2.8rem}.postamble{padding:1.25rem}.postamble__entry{color:#ffffff}</style><link rel=stylesheet href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/solarized-dark.min-BA98F.css><script src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/highlight.min-D8D27.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__markdown-pre--multiline').forEach(e=>hljs.highlightBlock(e));});</script><script src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/lottie.min-99657.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__sticker--media[data-source]').forEach(e=>{const anim=lottie.loadAnimation({container:e,renderer:'svg',loop:true,autoplay:true,path:e.getAttribute('data-source')});anim.addEventListener('data_failed',()=>e.innerHTML='<strong>[Sticker cannot be rendered]</strong>');});});</script><script>function scrollToMessage(event,id){const element=document.getElementById('chatlog__message-container-'+id);if(!element)
+return;event.preventDefault();element.classList.add('chatlog__message-container--highlighted');window.scrollTo({top:element.getBoundingClientRect().top-document.body.getBoundingClientRect().top-(window.innerHeight/2),behavior:'smooth'});window.setTimeout(()=>element.classList.remove('chatlog__message-container--highlighted'),2000);}
+function showSpoiler(event,element){if(!element)
+return;if(element.classList.contains('chatlog__attachment--hidden')){event.preventDefault();element.classList.remove('chatlog__attachment--hidden');}
+if(element.classList.contains('chatlog__markdown-spoiler--hidden')){event.preventDefault();element.classList.remove('chatlog__markdown-spoiler--hidden');}}</script><svg style=display:none><symbol id=attachment-icon viewBox="0 0 720 960"><path fill=#f4f5fb d=M50,935a25,25,0,0,1-25-25V50A25,25,0,0,1,50,25H519.6L695,201.32V910a25,25,0,0,1-25,25Z /><path fill=#7789c4 d=M509.21,50,670,211.63V910H50V50H509.21M530,0H50A50,50,0,0,0,0,50V910a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50h0V191Z /><path fill=#f4f5fb d=M530,215a25,25,0,0,1-25-25V50a25,25,0,0,1,16.23-23.41L693.41,198.77A25,25,0,0,1,670,215Z /><path fill=#7789c4 d=M530,70.71,649.29,190H530V70.71M530,0a50,50,0,0,0-50,50V190a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50Z /></symbol></svg><body><div class=preamble><div class=preamble__guild-icon-container><img class=preamble__guild-icon src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/68e6057b84c027d0b6da59681810b5b3-8BBDA.png alt="Guild icon" loading=lazy></div><div class=preamble__entries-container><div class=preamble__entry>Creation Lab</div><div class=preamble__entry>無目的RP空間 / 角色能力-外觀-戰鬥技巧-介紹</div><div class="preamble__entry preamble__entry--small">不要丟其他東西我們的卡米撒瑪會覺得很困擾</div></div></div>
+<div class="chatlog">
+<div class="sidebar" style="position:fixed;right:0;top:15%;background-color: rgb(140, 140, 140);">
+  <div onclick="location.href='角色能力-外觀-戰鬥技巧-介紹.html'">角色能力-外觀-戰鬥技巧-介紹</div>
+  <div onclick="location.href='第二客廳.html'">第二客廳</div>
+  <div onclick="location.href='場外2-戰後討論區.html'">場外2-戰後討論區</div>
+  <div onclick="location.href='rp大廳.html'">rp大廳</div>
+  <div onclick="location.href='rp訓練場.html'">rp訓練場</div>
+  <div onclick="location.href='rp廣場.html'">rp廣場</div>
+  <div onclick="location.href='rp圖書館.html'">rp圖書館</div>
+  <div onclick="location.href='rp澡堂.html'">rp澡堂</div>
+  <div onclick="location.href='rp有一個半圓形保護殼的平地.html'">rp有一個半圓形保護殼的平地</div>
+  <div onclick="location.href='rp客房.html'">rp客房</div>
+  <div onclick="location.href='rp地下停車場.html'">rp地下停車場</div>
+  <div onclick="location.href='rp宅邸外.html'">rp宅邸外</div>
+  <div onclick="location.href='鏡之世界.html'">鏡之世界</div>
+  <div onclick="location.href='rp表演廳.html'">rp表演廳</div>
+</div>
+<div class=chatlog__message-group><div id=chatlog__message-container-767399515899559947 class=chatlog__message-container data-message-id=767399515899559947><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/9ba81ac39e41d325f8ef1ac0e8a54609-24ABE.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(0,241,255) title=VT#4489 data-user-id=643570460839116818>√1</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-767399515899559947>18-Oct-20 10:51 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>賽門 衛斯理 (VTW)
+職位：未設定
+
+外貌：金髮藍瞳，170cm，有貓耳朵貓尾巴
+
+服裝(最常見搭配)：綠色軍裝襯衫，卡其運動褲，棕色登山鞋
+
+武器：登山杖，纜繩槍
+
+技能：
+運動「反應」
+運動「突破」
+運動「杖術掌握」
+生物「力量強化」
+生物「敏捷強化」
+生物「堅韌皮膚」
+生物「急速自愈」
+生物「毒素抗性」
+生物「複製四肢」
+生物「暫時翅膀」</span> <span class=chatlog__edited-timestamp title="18-Oct-20 11:08 PM">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-767413814731079690 class=chatlog__message-container data-message-id=767413814731079690><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/9ba81ac39e41d325f8ef1ac0e8a54609-24ABE.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(0,241,255) title=VT#4489 data-user-id=643570460839116818>√1</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-767413814731079690>18-Oct-20 11:48 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>賽門 衛斯理 (CITIZENS)
+職位：未設定
+
+外貌：金髮藍瞳，短髮，170cm
+
+服裝(最常見搭配)：綠色軍裝襯衫，卡其運動褲，棕色登山鞋
+
+武器：登山杖，纜繩槍
+
+能力：分身，分身皆由本人的意識操作，本人接觸的物品也能複製，分身的所見所聞都會部分的反應到本人的意識之中，分身在受傷後會消失，受到本人意識控制也會消失，在分身受到的1/50傷害會轉移到本人身上</span> <span class=chatlog__edited-timestamp title="19-Oct-20 03:20 PM">(edited)</span></div><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/P_20201018_035646_1_1-A5183.jpg> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/P_20201018_035646_1_1-A5183.jpg alt="Image attachment" title="Image: P_20201018_035646_1_1.jpg (240.93 KB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-767414065810636801 class=chatlog__message-container data-message-id=767414065810636801><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="18-Oct-20 11:49 PM">23:49</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>摩卡 衛斯理 (VTW)
+職位：圖書館管理員/室內設計師
+
+外貌：金藍漸層長髮(尾端藍色)，30cm長呆毛，右藍左銀異色瞳，151cm，有貓耳貓尾巴
+
+服裝(最常見搭配)：克利登王國國旗圖樣連帽外套(袖口過長)，白襯衫(袖口有點長)，黑領帶，鋁合金高音譜記號領帶夾，黑方鈦合金框眼鏡，黑百褶短裙，黑絲襪，黑白運動鞋
+
+武器：手槍
+
+技能：
+化學「創造淨水」
+化學「範圍凍結」
+化學「冷凍之觸」
+化學「冰箭」
+化學「氧氣維持」
+化學/創作「冰晶牢籠」
+生物「環境適應」
+生物「急速自癒」
+物理/創作「反彈模具」
+創作「創作模板」
+命中「貫穿射擊」
+偵查「透視」</span> <span class=chatlog__edited-timestamp title="19-Oct-20 12:19 AM">(edited)</span></div><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/20201011_020854_1_1-F4B5B.jpg> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/20201011_020854_1_1-F4B5B.jpg alt="Image attachment" title="Image: 20201011_020854_1_1.jpg (299.13 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-767416732221571085 class=chatlog__message-container data-message-id=767416732221571085><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/e2bb7d9ff329707ac00a488dbf8163fc-BBB12.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=Dobird#6324 data-user-id=646686524053782529>DD鳥</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-767416732221571085>19-Oct-20 12:00 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>三米
+外貌 : 160cm 身穿合身休閒服，西裝外套被披在肩膀上，全身偏暗的色系配上一點金黃的配件，例如沒度數的金框眼鏡，頭髮只綁起了後面的部分，而分成兩色的髮色讓三米非常好辨認，接近耳朵的位置長著一對蝙蝠的翅膀。
+Soul type : 心魔            武器：拐杖劍與獵槍
+天賦 : 改變單一物體的重力方向及大小
+或是製作不可視的重力點，使所有周圍的事物被重力點吸引，甚至可以製造一個可視的僞黑洞，僞黑洞會將碰到的所有事物吸入並壓縮在球體內，而每次黑洞消散時都會伴隨著爆炸，造出來的時間越長威力越大
+以上能力同時使用一種和一件為安全範圍
+嘴巴會釋放一般人類耳朵無法聽見的超音波，以超音波的反射全方位判別物件距離
+
+每次的戰鬥對三米來說只是嬉戲，在過程中會時不時做小小的惡作劇，比起硬碰硬三米更喜歡用技巧化解任何招數，要達成任何目標完全不在乎過程，只要結果一樣好就行，所以三米對紙筆考試特別不重視，而結果是三米因其頂尖的能力無法用筆試評估，因此學院決定不以筆試衡量三米的實力</span> <span class=chatlog__edited-timestamp title="13-Nov-20 08:00 PM">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-767419597938229269 class=chatlog__message-container data-message-id=767419597938229269><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/9ba81ac39e41d325f8ef1ac0e8a54609-24ABE.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(0,241,255) title=VT#4489 data-user-id=643570460839116818>√1</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-767419597938229269>19-Oct-20 12:11 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>奧蘭多 布魯克斯 (VTW)
+職位：未設定
+
+外貌：紅髮藍瞳，短髮，有兔耳兔尾，174cm
+
+服裝：西裝皮鞋/探險套裝
+
+武器：無
+
+能力：
+歷史「古文閱覽」
+歷史「失傳技術」
+駕駛「急速轉向」
+駕駛「洋流掌握」
+地理「地質感知」
+地理「指北」
+地理「距離掌握」
+生物/醫學「召喚拜亞基」
+生物「召喚黑山羊幼崽」
+物理「伊波恩霧輪術」
+心理學「夢之映像」</span> <span class=chatlog__edited-timestamp title="19-Oct-20 12:13 AM">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-767420045030588428 class=chatlog__message-container data-message-id=767420045030588428><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/875de9d5d28f35d35c2486a5c92b77bb-35A59.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=橘黃色#5982 data-user-id=357870366141710336>特別鮮豔的黃色</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-767420045030588428>19-Oct-20 12:13 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>空無二物</strong>-陣地不明
+外貌：182~178cm/65~61kg不等，詭異的金色右斜劉海，平常只能看見一隻鮮紅色膜紅的左眼，衣著灰色外套，黑色長褲與咖啡色鞋子。
+平常在戰鬥時會使圍巾出現於面上。顏色為黑色底紅色波浪紋與白色方塊隨機花紋。
+
+異能力
+1.[閃]：懶人理解-瞬間移動。(無CD)
+2.[荒蕪]：懶人理解-異次元收納袋。(無CD)
+3.[壓縮]：懶人理解-加速與放慢世界。(無CD)</span></div><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/unknown-D4818.png> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/unknown-D4818.png alt="Image attachment" title="Image: unknown.png (474.04 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-767421581311737886 class=chatlog__message-container data-message-id=767421581311737886><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/9ba81ac39e41d325f8ef1ac0e8a54609-24ABE.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(0,241,255) title=VT#4489 data-user-id=643570460839116818>√1</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-767421581311737886>19-Oct-20 12:19 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>小久保 由希可 (CITIZENS)
+職務：未設定
+
+外貌：棕髮綠瞳，中分馬尾，155cm
+
+服裝：學生制服/連帽外套，T恤，運動短褲，運動鞋
+
+武器：雙武士刀
+
+能力：加速，隨著移動不斷增加自己的動作/反應速度，一旦停下腳步便重新計算</span> <span class=chatlog__edited-timestamp title="19-Oct-20 12:35 AM">(edited)</span></div><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/P_20200814_223807_1-FD6E9.jpg> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/P_20200814_223807_1-FD6E9.jpg alt="Image attachment" title="Image: P_20200814_223807_1.jpg (202.83 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-767425460568064030 class=chatlog__message-container data-message-id=767425460568064030><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/9ba81ac39e41d325f8ef1ac0e8a54609-24ABE.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(0,241,255) title=VT#4489 data-user-id=643570460839116818>√1</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-767425460568064030>19-Oct-20 12:34 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>陳 以凡 (CITIZENS)
+職務：未設定
+
+外貌：紫髮藍瞳，斜瀏海蓋住眼睛，171cm
+
+服裝：帽T，運動褲，運動鞋
+
+武器：武士刀妖刀「時誡」
+
+能力：(武士刀的能力)刀刃碰觸到的物品時間暫停1秒，劃過空氣也能讓空氣暫時停止流動</span></div><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/P_20201018_031804_1-5ADD0.jpg> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/P_20201018_031804_1-5ADD0.jpg alt="Image attachment" title="Image: P_20201018_031804_1.jpg (108.37 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-767429170543460352 class=chatlog__message-container data-message-id=767429170543460352><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/9ba81ac39e41d325f8ef1ac0e8a54609-24ABE.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(0,241,255) title=VT#4489 data-user-id=643570460839116818>√1</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-767429170543460352>19-Oct-20 12:49 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>安柏 哈格斯特倫 (VTW)
+職務：無
+
+外貌：白髮紅瞳與異常白皙的肌膚，長髮，159cm
+
+服裝：黑色帽子，白色圍巾，黑斗篷，黑手套，白襯衫，白長裙，黑吊帶襪，黑長靴
+
+武器：鞋內暗器，匕首
+
+技能：
+醫學「吸血之刃(極)」
+醫學「吸血本能」飲血能夠獲得能量
+醫學「暗影傀儡」操控不死者
+醫學「屍變白化病傳播者」被劃破傷口的人將會感染屍變白化病
+醫學「藥水達人」
+醫學「召喚骷髏」
+醫學「藥師之手(眩暈)」
+心理學「震懾」
+心理學「傀儡」
+生物學「蝙蝠翅膀」
+聆聽「超音波」
+偵查「夜晚視覺」
+閃避「霧化」
+被動「穩定變形/蝙蝠」</span> <span class=chatlog__edited-timestamp title="20-Oct-20 01:26 AM">(edited)</span></div><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/P_20201018_025645-A6735.jpg> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/P_20201018_025645-A6735.jpg alt="Image attachment" title="Image: P_20201018_025645.jpg (2.8 MB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-767430821270257684 class=chatlog__message-container data-message-id=767430821270257684><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/b634da2dae14b6179d1e7fbe658f3c5d-5430E.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=BULLSHIT#9812 data-user-id=507173991589347331>Zzz</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-767430821270257684>19-Oct-20 12:56 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>斯凱勒。積祈奧  (another world)
+外貌:
+163cm 藍瞳藍髮，一半劉海蓋住右眼,有貓耳
+技能:
+1. hyperspace,10mx10mx10m的空間(成長ing)，進去就看不見人.
+2.copy，複製別人技能(CD 90min)
+3.silent，碰到別人ban人家all技能，解除就不碰
+4.coherent，包括自己任何一點作引力中心(被重力限制)</span> <span class=chatlog__edited-timestamp title="14-Nov-20 10:36 PM">(edited)</span></div><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/447_20201019002936-1E847.png> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/447_20201019002936-1E847.png alt="Image attachment" title="Image: 447_20201019002936.png (97.04 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-767435057752440833 class=chatlog__message-container data-message-id=767435057752440833><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/b634da2dae14b6179d1e7fbe658f3c5d-5430E.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=BULLSHIT#9812 data-user-id=507173991589347331>Zzz</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-767435057752440833>19-Oct-20 01:12 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>斯凱勒。亞瑞以  (another world)
+外貌:
+177cm,頭髮不太整齊，綠曈藍髮，狐狸耳
+技能:
+1.atmosphere，控制空氣
+2.chron，把時間回前or移後(移後CD 1 month)
+3.future，看到5秒後發生的事</span> <span class=chatlog__edited-timestamp title="20-Oct-20 03:57 PM">(edited)</span></div><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/447_20201019004017-090F1.png> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/447_20201019004017-090F1.png alt="Image attachment" title="Image: 447_20201019004017.png (104.73 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-767446236096757820 class=chatlog__message-container data-message-id=767446236096757820><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/14f99aa3d1944e872ef3becb98888eac-7731D.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=suck0202#4707 data-user-id=403904071750254592>挖打西挖NO.1</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-767446236096757820>19-Oct-20 01:57 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>狄米特
+(自稱狄 喜歡別人叫他狄米 <span class="chatlog__markdown-spoiler chatlog__markdown-spoiler--hidden" onclick="showSpoiler(event, this)"><s>謝謝尤子麻麻取名</s></span>
+
+外貌:
+看起來像14歲的男孩
+頭髮雜亂 
+藍眼豎瞳(可以夜視
+臉上有奇特的花紋
+有虎牙
+喜歡穿寬鬆的衣服
+身高:約160(cm
+體重:約50(kg
+
+能力:
+1.溯源重構:讀取環境中的元素了解最近發生的事 越久越模糊 一天之內的事可以清楚了解
+2.元素導體:能引導元素且能化為能量收入體內(目前熟練度是:風&gt;水&gt;火)環境對強弱有很大的影響
+3.行者不息:死而重生 會失去一部分東西(例如記憶、年齡...) 需要時間與足夠的能量(通常使用植木的能量)會隨機重生在曾經走過的地方</span> <span class=chatlog__edited-timestamp title="19-Oct-20 03:36 AM">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-767470628437229618 class=chatlog__message-container data-message-id=767470628437229618><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/14f99aa3d1944e872ef3becb98888eac-7731D.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=suck0202#4707 data-user-id=403904071750254592>挖打西挖NO.1</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-767470628437229618>19-Oct-20 03:34 AM</a></span></div><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/IMG_20201019_011907-456E9.jpg> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/IMG_20201019_011907-456E9.jpg alt="Image attachment" title="Image: IMG_20201019_011907.jpg (2.41 MB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-767653239465836554 class=chatlog__message-container data-message-id=767653239465836554><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/cb02007acca01c5bcf14720f837ec496-33AA0.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(39,126,205) title=咕姑固#5934 data-user-id=559282266879033345>請不要撕我 但可以捏我OuO</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-767653239465836554>19-Oct-20 03:39 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><div class="chatlog__markdown-quote"><div class="chatlog__markdown-quote-border"></div><div class="chatlog__markdown-quote-content">茉莉 ??? (十仔の內心世界)
+外貌：長黑髮 藍瞳 身材均稱的14歲少女 身高152 體重45KG
+技能：
+定身 三秒定身，最多一人，靠眼神接觸(當是寫輪眼吧)
+能力封鎖 直徑二十米範圍能力封鎖，持續三秒，上限10人，CD10秒
+神光治癒 能治癒一切傷口，殘疾，包括詛咒
+復活術 復活生命，只要靈魂還在就可以進行復活
+神光淨化 淨化一切病症，DEBUFF
+呼神護衛 放出能量光盾，能抵禦攻擊，其威力可以檔下麥卡斯的深淵炮大招
+空間移動 不是瞬移，而是打開跨世界傳送門，通往各個世界
+</div></div><span class="chatlog__markdown-mention" title="咕姑固#5934">@請不要撕我 但可以捏我OuO</span></span> <span class=chatlog__edited-timestamp title="06-Nov-20 11:44 PM">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-767718046881021984 class=chatlog__message-container data-message-id=767718046881021984><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/9ba81ac39e41d325f8ef1ac0e8a54609-24ABE.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(0,241,255) title=VT#4489 data-user-id=643570460839116818>√1</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-767718046881021984>19-Oct-20 07:57 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>赫克托爾 普萊斯
+職務：訓練場管理員
+
+外貌：金髮藍瞳斜瀏海，169cm
+
+服裝：皮外套，T恤，休閒褲，皮鞋
+
+武器：無
+
+技能：無</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-767756875780325407 class=chatlog__message-container data-message-id=767756875780325407><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/bb4bed715b124eda9514b324be33c541-BB9F2.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(228,180,0) title=Somniumterra#4523 data-user-id=638284901191516171>͔∑: 3愚珠汰怖廢怒李卑-KP化櫻本文代</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-767756875780325407>19-Oct-20 10:31 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>Somnium terra /索米昂 塔拉(音譯)
+誕生於某人幻想之中,以名字為載體,穿梭不同世界並扮演着不同的角色
+外貌:受制於幻想力，年齡身高不等,大多數時間是黑長卷的紅眼貓娘,根據所在世界的限制外貌也會有所改變,甚至有時候會在只有名字一樣的情況下扮演角色。目前是蘿莉貓娘。左耳穿有耳釘,左側前髮綁有髮帶。
+
+能力:
+外貌變化:能夠隨意改變外貌與體型,可變程度受所在世界及幻想力限制
+
+虛化:變成一隻幽靈貓咪,可無視所有物理障礙,並免疫所有傷害
+
+穿越:能夠前往不同世界,前提是該世界裡有一具擁有自己名字(英文)的空殼
+
+再現:可在當前世界中最大程度以幻想力再現出在其他世界所見到的事物及學到的能力
+
+旁觀者:被幻想者所控制時,會以幽靈貓咪的狀態看着[自己]的一舉一動</span> <span class=chatlog__edited-timestamp title="20-Oct-20 01:30 AM">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-767758949067653190 class=chatlog__message-container data-message-id=767758949067653190><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/bb4bed715b124eda9514b324be33c541-BB9F2.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(228,180,0) title=Somniumterra#4523 data-user-id=638284901191516171>͔∑: 3愚珠汰怖廢怒李卑-KP化櫻本文代</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-767758949067653190>19-Oct-20 10:39 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>幽靈貓咪形態</span></div><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/unknown-FF36F.png> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/unknown-FF36F.png alt="Image attachment" title="Image: unknown.png (2.14 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-768025036191432704 class=chatlog__message-container data-message-id=768025036191432704><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/dd7a5c2495d8efb1690a19da0a897189-01C78.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=SKYEEEEE#3454 data-user-id=507168948903477251>SKYEEEEE</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-768025036191432704>20-Oct-20 04:17 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>斯凱&#183;費里曼
+外貌: 身高157cm，藍紅雙色頭髮，紅色眼睛的背翼鳥型半人，圍巾和飛行帽是其特色穿搭。
+技能:
+氣流操縱－在有空氣的地方即可操控氣流、刮風。
+風中隱士－在有風的地方消除氣息不被敵人發現
+風之加護－發動條件: 周圍有風使指定部位瞬間變得堅硬
+風爆－在不觸碰的情況下擊退10米內的目標</span> <span class=chatlog__edited-timestamp title="21-May-21 10:39 AM">(edited)</span></div></div></div></div><div id=chatlog__message-container-768025051428552714 class=chatlog__message-container data-message-id=768025051428552714><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="20-Oct-20 04:17 PM">16:17</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/20201020_161236-11B37.jpg> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/20201020_161236-11B37.jpg alt="Image attachment" title="Image: 20201020_161236.jpg (302.48 KB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-768025615886057474 class=chatlog__message-container data-message-id=768025615886057474><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="20-Oct-20 04:19 PM">16:19</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>“雷草”
+外貌: 身高164cm，亞麻色長髮，深藍色眼睛，戴著帽子，穿著衛衣。
+技能:
+導電體－身體能承受高壓電流，能作為導體放出電流攻擊
+世界線旅人－在不同平行時空中隨意遊走
+雷暴警告－把天氣瞬間改為雷雨
+光影游俠－召喚自己的影子配合行動攻擊，時間越長影子的行動越笨拙</span> <span class=chatlog__edited-timestamp title="21-May-21 10:39 AM">(edited)</span></div></div></div></div><div id=chatlog__message-container-768025632264683560 class=chatlog__message-container data-message-id=768025632264683560><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="20-Oct-20 04:19 PM">16:19</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/20201020_161255-A53C1.jpg> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/20201020_161255-A53C1.jpg alt="Image attachment" title="Image: 20201020_161255.jpg (279.26 KB)" loading=lazy> </a></div></div></div></div><div id=chatlog__message-container-768026536066023444 class=chatlog__message-container data-message-id=768026536066023444><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="20-Oct-20 04:23 PM">16:23</div></div><div class=chatlog__message-primary><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>9號
+外貌: 身高166cm，外貌以女性為基礎的機械人，金色短髮，淺藍色眼睛，瞳孔同樣是淺藍色，戴著眼鏡，鞋子有滾軸溜冰輪
+技能:
+管理者#肅清#－只有在發現違規者才能觸發，產生大範圍爆炸，除了違規者受到傷害外不會波及其他東西。
+移動禁止#電槍#－命中會使目標無法行動3秒。
+時間停止#寂空#－使自身以外的時間流動暫停3秒，CD一分鐘。
+閃避本能#瞬擊#－敵人在自己為中心的3米範圍內才能發動: 瞬間移動到敵人身後並攻擊敵人。</span></div></div></div></div><div id=chatlog__message-container-768026563035267102 class=chatlog__message-container data-message-id=768026563035267102><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="20-Oct-20 04:23 PM">16:23</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/20201020_161316-E0631.jpg> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/20201020_161316-E0631.jpg alt="Image attachment" title="Image: 20201020_161316.jpg (277.83 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-768034162946867210 class=chatlog__message-container data-message-id=768034162946867210><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/9ba81ac39e41d325f8ef1ac0e8a54609-24ABE.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(0,241,255) title=VT#4489 data-user-id=643570460839116818>√1</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-768034162946867210>20-Oct-20 04:53 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>克里斯 華生
+職位：大樓管理員
+
+外貌：棕髮綠瞳，凌亂捲髮
+
+服裝：卡其色外套，背心，襯衫，領帶，休閒褲，皮鞋
+
+武器：雨傘(西洋劍)
+
+技能：無</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-768176484937629756 class=chatlog__message-container data-message-id=768176484937629756><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/9ba81ac39e41d325f8ef1ac0e8a54609-24ABE.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(0,241,255) title=VT#4489 data-user-id=643570460839116818>√1</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-768176484937629756>21-Oct-20 02:19 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>漢斯 沃克 (CITIZENS)
+職位：無
+
+外貌：紫髮螢光綠瞳，中分
+
+服裝：實驗袍，黑T，牛仔褲
+
+武器：各式飛鏢
+
+能力：無</span> <span class=chatlog__edited-timestamp title="02-Aug-21 03:05 AM">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-769588591281700864 class=chatlog__message-container data-message-id=769588591281700864><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/14f99aa3d1944e872ef3becb98888eac-7731D.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=suck0202#4707 data-user-id=403904071750254592>挖打西挖NO.1</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-769588591281700864>24-Oct-20 11:50 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>藍格斯
+外貌:
+大約20歲;身高172;體重58
+淺藍色即肩長髮/蒙眼(右眼有傷疤)/喜歡寬鬆的衣服
+技能:
+1.磁星 : 操控磁力
+2.量子思維 : 加速思考與計算速度
+3.受罪:轉移他人或自己身上的傷痛</span></div></div></div></div><div id=chatlog__message-container-769588700387737650 class=chatlog__message-container data-message-id=769588700387737650><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="24-Oct-20 11:50 PM">23:50</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/download20201006234311-33073.png> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/download20201006234311-33073.png alt="Image attachment" title="Image: download20201006234311.png (139.76 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-769589118656970773 class=chatlog__message-container data-message-id=769589118656970773><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/9ba81ac39e41d325f8ef1ac0e8a54609-24ABE.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(0,241,255) title=VT#4489 data-user-id=643570460839116818>√1</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-769589118656970773>24-Oct-20 11:52 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>巴拉卡 戴恩賽 (CITIZENS)
+外貌：黑髮銀瞳，捲髮，有著黝黑的皮膚
+
+服裝：格子襯衫，牛仔褲，帆布鞋
+
+武器：匕首
+
+能力：量子跳躍</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-769884701530783745 class=chatlog__message-container data-message-id=769884701530783745><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/875de9d5d28f35d35c2486a5c92b77bb-35A59.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=橘黃色#5982 data-user-id=357870366141710336>特別鮮豔的黃色</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-769884701530783745>25-Oct-20 07:26 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>千斤頂
+角色外觀:
+白色短髮未知形狀
+隨時戴著一頂綠帽小精靈
+雙眼為淺紅色
+衣服是黑色配上三條白線
+褲子是深橘色的短褲，有一條普通的腰帶
+順帶一提的設定：
+他有點壯
+他是個&quot;路人&quot;角色
+絕對水瓶座#
+
+能力可公開部分：
+
+名稱:&quot;怠惰的祝福&quot;
+說明:從手中的魔法陣召喚出一道不會傳導的靜電，被擊中者會頓時停止動作，隨後即恢復正常，並產生會累積的疲憊感(集中5次後便不會再停止動作，1小時內沒有被此招命中，停止動作的效果將會重置)
+
+名稱:&quot;雷光劍&quot;
+說明:從身上某處(不限地方)召喚出一把劍，摩擦後可產生靜電(持續10min，冷卻2min)，被擊中者會麻痺約0.5秒(意志力越強，麻痺時間將會越短)對同一位敵人5分鐘內最多觸發2次(從最後那次開始計時)一樣可以累積疲憊感
+
+名稱:&quot;強制恐懼&quot;
+說明:自身化為雷電30秒，強制傳導任何物品(化為雷電時無法攻擊)冷卻為一分鐘，可潛入敵人體內，並產生大量疲憊感，但時間到不管在何處都將強制回原人形(化為人形約5秒，最後一秒可攻擊)，離開後會殘留一些疲憊感。</span></div><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/Screenshot_20201007-183657_1-6A132.jpg> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/Screenshot_20201007-183657_1-6A132.jpg alt="Image attachment" title="Image: Screenshot_20201007-183657_1.jpg (118.86 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-769910777078743052 class=chatlog__message-container data-message-id=769910777078743052><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/9ba81ac39e41d325f8ef1ac0e8a54609-24ABE.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(0,241,255) title=VT#4489 data-user-id=643570460839116818>√1</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-769910777078743052>25-Oct-20 09:10 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>文森 庫柏 (VTW)
+職位：無
+
+外貌：棕髮金瞳，短髮，164cm，棕色翅膀
+
+服裝：帽，領帶，襯衫，外套，休閒褲
+
+武器：狙擊槍，手槍，軍刀
+
+能力：
+物理「創造角動量」
+物理「混亂引力」
+物理「無重力」
+物理「定向引力」
+物理「收納」
+物理「取出」
+物理「定時器」
+物理「電流」
+物理「核分裂」
+物理「核融合」
+物理「固態光」
+物理「鏡之世界」
+物理/創作「反彈模具」
+化學「引爆」
+化學「冰晶箭矢」
+化學「創造二氧化矽」
+生物「視覺強化」
+生物「急速自癒」
+心理學「威壓」
+醫學「應急治療」
+醫學「普通治療」
+命中「貫穿射擊」
+命中「致命射擊」
+命中「狙擊」
+命中「追蹤射擊」
+命中「標記目標」
+偵查「透視」
+平衡「暈眩抗性」
+閃避「感知強化」
+閃避「幻象」
+運動「移動強化」
+運動「斬擊掌握」</span> <span class=chatlog__edited-timestamp title="28-Oct-20 04:28 PM">(edited)</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-770222040476680193 class=chatlog__message-container data-message-id=770222040476680193><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/875de9d5d28f35d35c2486a5c92b77bb-35A59.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=橘黃色#5982 data-user-id=357870366141710336>特別鮮豔的黃色</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-770222040476680193>26-Oct-20 05:47 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>S.T.石頭 可公開資訊：
+性別：男
+
+衣著：初次登場穿著黑色長袖有帽帽的挖溝(不太確定是啥#)，黑色的長褲(材質也不太明確###)[上圖顏色是還沒塗色所以是白的]
+胸前左邊有一個w右半邊拉下去的符號。
+背後也有一樣的圖樣，戴著黑色手套。
+頭髮橘色，一般情況下看不見眼睛。
+
+能力(可公開部分)：
+
+名稱[意念之力]
+說明:
+能將地形/建築物或物品等其分子轉化為武器類或其素材。(轉化比例有點大，不太固定，有可能一棟房子換一把小手槍:3)
+ex:將旁邊的樹吸收並製造出一把木劍
+註:只能製造自己了解結構的武器，但是接觸過的武器將了解其構造。
+
+名稱[臨界爆發]
+說明:
+將創作出來的武器或素材(包含已擁有的)強化，使用臨界爆發需要時間，正在使用時無法使用該武器，但可以使用意念之力製造武器。
+ex:使木劍上擁有鐵一般的硬度
+註:強化後的武器一段時間就會消失。</span> <span class=chatlog__edited-timestamp title="26-Oct-20 05:53 PM">(edited)</span></div><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/JPEG_20190901_160446-FECBC.jpg> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/JPEG_20190901_160446-FECBC.jpg alt="Image attachment" title="Image: JPEG_20190901_160446.jpg (2.35 MB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-771998090592256010 class=chatlog__message-container data-message-id=771998090592256010><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/14f99aa3d1944e872ef3becb98888eac-7731D.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=suck0202#4707 data-user-id=403904071750254592>挖打西挖NO.1</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-771998090592256010>31-Oct-20 03:24 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>(藍摘下蒙眼布的樣子</span> <span class=chatlog__edited-timestamp title="31-Oct-20 03:25 PM">(edited)</span></div><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/download20201006152344-A260A.png> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/download20201006152344-A260A.png alt="Image attachment" title="Image: download20201006152344.png (143.04 KB)" loading=lazy> </a></div><div class=chatlog__reactions><div class=chatlog__reaction title=meow_meow_meow><img class="chatlog__emoji chatlog__emoji--small" alt=meow_meow_meow src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/731004155128447028-1B750.png loading=lazy> <span class=chatlog__reaction-count>5</span></div></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-771999086190526474 class=chatlog__message-container data-message-id=771999086190526474><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/b634da2dae14b6179d1e7fbe658f3c5d-5430E.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(233,30,99) title=BULLSHIT#9812 data-user-id=507173991589347331>Zzz</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-771999086190526474>31-Oct-20 03:28 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>萊 
+外貌:
+167cm,黑髮黑曈， <strong>人類</strong> ，保證送信成功率100%，帶着獵槍(打獵是愛好)
+技能:
+量:改變自身質量(0cd)</span></div><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/475_20201029160121-AEB63.png> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/475_20201029160121-AEB63.png alt="Image attachment" title="Image: 475_20201029160121.png (124.74 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-772038904610029618 class=chatlog__message-container data-message-id=772038904610029618><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/875de9d5d28f35d35c2486a5c92b77bb-35A59.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=橘黃色#5982 data-user-id=357870366141710336>特別鮮豔的黃色</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-772038904610029618>31-Oct-20 06:06 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>聖索菲亞 可公開資訊
+外貌：
+白色洋裝(?
+長筒靴(?
+藍色雙馬尾長至大腿
+右瀏海蓋住右眼
+左紅右金
+162cm小蘿莉
+(<s>圖的頭髮是我作畫失誤</s>)
+
+能力：
+
+名稱[審判者]
+說明(非常簡單說明):
+將身上的能量聚合成固體狀。
+通常是黑色的上面附有紅色閃電。</span> <span class=chatlog__edited-timestamp title="31-Oct-20 06:59 PM">(edited)</span></div><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/2020-03-25_13-38483.png> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/2020-03-25_13-38483.png alt="Image attachment" title="Image: 2020-03-25_13.png (1.98 MB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-778256437473706024 class=chatlog__message-container data-message-id=778256437473706024><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/9ba81ac39e41d325f8ef1ac0e8a54609-24ABE.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(0,241,255) title=VT#4489 data-user-id=643570460839116818>√1</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-778256437473706024>17-Nov-20 09:53 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>羅賓森 斯圖爾特 (CITIZENS)
+外貌：黝黑的皮膚，短髮，180cm
+
+服裝：西裝
+
+武器：無
+
+能力：宇宙弦(一維重力弦)
+
+擅長戰鬥形式：街巷戰</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-779362692200792094 class=chatlog__message-container data-message-id=779362692200792094><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/9ba81ac39e41d325f8ef1ac0e8a54609-24ABE.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(0,241,255) title=VT#4489 data-user-id=643570460839116818>√1</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-779362692200792094>20-Nov-20 11:09 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>細江 摩卡 (CITIZENS)
+職位：圖書館管理員/室內設計師
+
+外貌：金藍漸層髮(尾端藍色)，右藍左銀異色瞳，151cm，左手是能夠裝載武器義肢
+
+服裝(最常見搭配)：英國國旗圖樣連帽外套(袖口過長)，白襯衫(袖口有點長)，黑領帶，鋁合金高音譜記號領帶夾，黑方鈦合金框眼鏡，降噪耳機，黑百褶短裙，黑絲襪，黑白運動鞋
+
+武器：手槍，霰彈槍，突擊步槍，外骨骼
+
+技能：
+集中注意力後能夠發出/聽取波長從微波到長電磁波波長的頻率
+
+近戰能力：中
+射擊能力：強
+戰術企劃：中上
+戰術執行：強
+偵查技巧：極強
+續戰能力：弱
+能力開發程度：高
+
+擅長戰鬥形式：街巷戰，夜戰，突襲，防禦</span> <span class=chatlog__edited-timestamp title="20-Nov-20 11:09 PM">(edited)</span></div><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/P_20201029_000315-0E9B3.jpg> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/P_20201029_000315-0E9B3.jpg alt="Image attachment" title="Image: P_20201029_000315.jpg (2.47 MB)" loading=lazy> </a></div><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/P_20201109_224621-52C7C.jpg> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/P_20201109_224621-52C7C.jpg alt="Image attachment" title="Image: P_20201109_224621.jpg (2.66 MB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-799710798502297640 class=chatlog__message-container data-message-id=799710798502297640><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/cbb69a14e64c999433bcf0f659ca5995-38594.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=EGGZ#6218 data-user-id=689492807563739412>EGGZ</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-799710798502297640>16-Jan-21 02:45 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>但以理
+外貌：
+202 CM
+白髮 卷卷的長髮
+頭上有酡色章魚耳
+琉璃色章魚瞳
+頸上有箍咒 (？
+身體各部份都有紋身
+穿着～～～ (( 有時會把上衣脫掉
+能力：
+詛呪 - 觸碰到的生物身體任何部份都會腐爛 
+祝福 - 受到祝福的人體外受的傷都可以痊愈 但對自身無效
+(( 可以自由切換成 20 cm 小章魚</span> <span class=chatlog__edited-timestamp title="17-Feb-21 08:48 PM">(edited)</span></div></div></div></div><div id=chatlog__message-container-799710814088462368 class=chatlog__message-container data-message-id=799710814088462368><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="16-Jan-21 02:45 AM">02:45</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/image0-4CA74.jpg> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/image0-4CA74.jpg alt="Image attachment" title="Image: image0.jpg (198.55 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-811526775443947540 class=chatlog__message-container data-message-id=811526775443947540><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/dd7a5c2495d8efb1690a19da0a897189-01C78.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=SKYEEEEE#3454 data-user-id=507168948903477251>SKYEEEEE</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-811526775443947540>17-Feb-21 05:17 PM</a></span></div><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/20210217_171055-AEC0E.jpg> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/20210217_171055-AEC0E.jpg alt="Image attachment" title="Image: 20210217_171055.jpg (85.43 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-827746318205583380 class=chatlog__message-container data-message-id=827746318205583380><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/875de9d5d28f35d35c2486a5c92b77bb-35A59.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=橘黃色#5982 data-user-id=357870366141710336>特別鮮豔的黃色</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-827746318205583380>03-Apr-21 11:28 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>【代號：玉米】
+外貌：淺灰髮或白髮，黑瞳，平常工作時黑長袖黑長褲，因為工作關係可能會帶著帽帽。
+使用能力時，原本頭髮蓋住的右眼會可視，而左眼會黑化。
+
+能力(可公開部分)
+［浮士德-竄改］：使身體附上黑色的能量聚合物鎧甲，附上可有不同的強化效果，一次只能存在一種效果。
+簡單分類來看(功能分類並非位置分類)：
+手-強化攻擊傷害與距離及變形
+腳-強化速度與跳躍
+軀-強化身體恢復能力與防禦強度</span></div><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/12-28-2020_15.30_2-E66E4.jpg> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/12-28-2020_15.30_2-E66E4.jpg alt="Image attachment" title="Image: 12-28-2020_15.30_2.jpg (479.06 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-827786685826727946 class=chatlog__message-container data-message-id=827786685826727946><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/9ba81ac39e41d325f8ef1ac0e8a54609-24ABE.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(0,241,255) title=VT#4489 data-user-id=643570460839116818>√1</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-827786685826727946>03-Apr-21 02:08 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>史考特 羅伯特
+外貌：黑色頭髮，防水外套，墨鏡，右眼義眼，右手義肢
+戰鬥模式：
+混合多種武術的徒手戰鬥
+匕首和刺刀術，突擊步槍
+能力：(強化)
+強化自己的力量與速度(漸強)
+短暫強化指定部位的肌肉(瞬間)
+強化周圍隊友的力量與速度(漸強，消耗體力大)</span> <span class=chatlog__edited-timestamp title="02-Aug-21 03:03 AM">(edited)</span></div><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/P_20210331_210158-596F4.jpg> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/P_20210331_210158-596F4.jpg alt="Image attachment" title="Image: P_20210331_210158.jpg (2.36 MB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-839584862691131432 class=chatlog__message-container data-message-id=839584862691131432><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/9ba81ac39e41d325f8ef1ac0e8a54609-24ABE.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(0,241,255) title=VT#4489 data-user-id=643570460839116818>√1</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-839584862691131432>06-May-21 03:30 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><div class="chatlog__markdown-quote"><div class="chatlog__markdown-quote-border"></div><div class="chatlog__markdown-quote-content">幽靈
+</div></div>使用幽靈語的漂浮生命體，沒有實體但可見，非常神秘，櫻時能夠跟他溝通</span></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-839761037338083338 class=chatlog__message-container data-message-id=839761037338083338><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/cb02007acca01c5bcf14720f837ec496-33AA0.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(39,126,205) title=咕姑固#5934 data-user-id=559282266879033345>請不要撕我 但可以捏我OuO</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-839761037338083338>06-May-21 03:10 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>風暴兵(stormtrooper)
+編號：TK-9527
+身高：180 體重:80kg
+年齡：27歲
+外觀特徵：黃皮 黑瞳 黑色短髮
+武器：E-11突擊半自動爆能槍(因為帝國的貪腐使爆能槍生產過程偷工減料 導致部份零件鬆散使準度下降) 熱能手雷&#215;1
+穿著：裡面穿黑色緊身衣 外面是白色高耐熱耐衝擊合成物料裝甲 能擋2-3發爆能槍子彈 但對金屬子彈的防護性低 裝甲有保暖防水的功能 
+頭盔：堅硬的頭盔防護性較好 甚至能擋4-5發9mm子彈 眼睛部份附有夜視與測距效果 頭盔有使士兵在無氧的太空環境呼吸而且能過濾濃煙(但不能過濾毒氣) 但因為頭盔的笨重還有極差的視覺清晰度使風暴兵的射擊準度降低
+
+背景
+出生日期：23BBY12月4號 (Before Battle of Yavin，雅汶戰役前23年(雅汶戰役就是星戰4炸第一顆死星的戰役，<s>星戰就是這樣算年份的</s>))
+出生星球：科洛桑(Coruscant，銀河帝國的首都)
+來到rp世界時間線：4ABY(After Battle of Yavin，雅汶戰役後4年)恩多戰役(Battle of endor，星戰6炸第二顆死星的戰役)在恩多星系的衛星上與反抗軍打地面戰 看到天上的死星二號炸開時意識知道自己效忠的銀河帝國已經戰敗了 開始落荒而逃 結果不小心掉到地洞裡然後就傳到這裡來了</span> <span class=chatlog__edited-timestamp title="06-May-21 03:55 PM">(edited)</span></div></div></div></div><div id=chatlog__message-container-839761461127544852 class=chatlog__message-container data-message-id=839761461127544852><div class=chatlog__message><div class=chatlog__message-aside><div class=chatlog__short-timestamp title="06-May-21 03:12 PM">15:12</div></div><div class=chatlog__message-primary><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/619at1ANwLL._AC_UY1000_-2FDDD.jpg> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/619at1ANwLL._AC_UY1000_-2FDDD.jpg alt="Image attachment" title="Image: 619at1ANwLL._AC_UY1000_.jpg (39.6 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-844993646780219413 class=chatlog__message-container data-message-id=844993646780219413><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/9ba81ac39e41d325f8ef1ac0e8a54609-24ABE.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(0,241,255) title=VT#4489 data-user-id=643570460839116818>√1</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-844993646780219413>21-May-21 01:43 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>鈴本 櫻時
+擁有看見幽靈的能力
+擁有能夠轉換法術能量進到物品的能力
+本人喜歡使用符咒當介質
+會使用多種法術</span></div><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/P_20210506_175622-8CF13.jpg> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/P_20210506_175622-8CF13.jpg alt="Image attachment" title="Image: P_20210506_175622.jpg (801.18 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-852024725852651521 class=chatlog__message-container data-message-id=852024725852651521><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/09f5dc00b3ef5a37464821d67b67c26d-C2F4A.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(39,126,205) title=琉OuOxygen#3065 data-user-id=680607820911214630>來當蘿莉嘍</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-852024725852651521>09-Jun-21 11:22 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>藤原 沖信
+身高體重：160cm 55kg 
+17歲
+平常穿著是浴衣木屐，散發著一種傳統感。被一個家族收養，成為繼承人。有著不錯的心理洞悉能力，及優秀的劍術才能
+(紙娃娃使用：旧都なぎ)</span> <span class=chatlog__edited-timestamp title="09-Jun-21 12:09 PM">(edited)</span></div><div class=chatlog__attachment><a href=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/download20210606232129-798EE.png> <img class=chatlog__attachment-media src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/download20210606232129-798EE.png alt="Image attachment" title="Image: download20210606232129.png (326.74 KB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-866064129725693982 class=chatlog__message-container data-message-id=866064129725693982><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=Creation%20Lab%20-%20%E7%84%A1%E7%9B%AE%E7%9A%84RP%E7%A9%BA%E9%96%93%20-%20%E8%A7%92%E8%89%B2%E8%83%BD%E5%8A%9B-%E5%A4%96%E8%A7%80-%E6%88%B0%E9%AC%A5%E6%8A%80%E5%B7%A7-%E4%BB%8B%E7%B4%B9%20%5B767377175002611765%5D.html_Files/9ba81ac39e41d325f8ef1ac0e8a54609-24ABE.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author style=color:rgb(0,241,255) title=VT#4489 data-user-id=643570460839116818>√1</span> <span class=chatlog__timestamp><a href=#chatlog__message-container-866064129725693982>18-Jul-21 05:09 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>克里斯托福 法蘭西斯科
+職業：黑手黨(Alpha世界線)/模板師(Iota世界線)
+種族：翼手鳥半人，紅雀
+紅髮馬尾，黃眼，總是說著自己不是穿著女裝，用自己取的綽號稱呼每個人
+穿著：白襯衫、黑短褲、黑絲襪、布鞋、圓眼鏡</span> <span class=chatlog__edited-timestamp title="02-Aug-21 03:02 AM">(edited)</span></div></div></div></div></div>
+
+</div>
+<div class=postamble><div class=postamble__entry>Exported 47 message(s)</div></div>
